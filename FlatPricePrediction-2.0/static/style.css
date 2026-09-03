@@ -1,0 +1,373 @@
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #252a30;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar {
+    background-color: #294c3a;
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 0.3px;
+}
+
+.nav-link {
+    margin-left: 15px;
+    color: #ffffff !important;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: #d7eadc !important;
+}
+
+
+/* ================= HOME / HERO ================= */
+
+.hero-section {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background-color: #eef3ef;
+    padding: 70px 0;
+}
+
+.hero-content {
+    padding-right: 45px;
+}
+
+.small-heading {
+    color: #3f6952;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #3f6952;
+}
+
+.hero-description {
+    color: #68716b;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.predict-btn {
+    background-color: #3f6952;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.predict-btn:hover {
+    background-color: #294c3a;
+    color: white;
+}
+
+.hero-image-container {
+    padding-left: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= PREDICTION SECTION ================= */
+
+.prediction-section {
+    padding: 80px 0;
+    background-color: #f3f5f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 0;
+    color: #6b737c;
+    font-size: 15px;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cfd5db;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4f7d62;
+}
+
+
+/* ================= BUTTON ================= */
+
+.button-container {
+    margin-top: 28px;
+    text-align: center;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3f6952;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #345842;
+}
+
+
+/* ================= RESULT ================= */
+
+.result {
+    margin-top: 28px;
+    padding: 22px;
+    border-radius: 8px;
+    background-color: #edf5ef;
+    border-left: 5px solid #3f6952;
+}
+
+.result h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.result p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #31563f;
+}
+
+
+/* ================= HOW IT WORKS ================= */
+
+.how-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.how-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.how-header h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.how-header p {
+    color: #6b737c;
+    line-height: 1.6;
+}
+
+.how-card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid #e1e6e3;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.step-number {
+    color: #3f6952;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.how-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.how-card p {
+    color: #6b737c;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #294c3a;
+    color: white;
+    padding: 40px 0 25px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 8px;
+    color: #d9e3dc;
+    font-size: 14px;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #b9c9bf;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image-container {
+        padding-left: 0;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .prediction-section,
+    .how-section {
+        padding: 60px 0;
+    }
+}
