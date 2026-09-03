@@ -1,12 +1,21 @@
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
+import os
 
 app = Flask(__name__)
 
+# Get the folder where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Load the trained model and encoder
-model = joblib.load(r"model/flat_price_model.pkl")
-encoder = joblib.load(r"model/encoder.pkl")
+model = joblib.load(
+    os.path.join(BASE_DIR, "model", "flat_price_model.pkl")
+)
+
+encoder = joblib.load(
+    os.path.join(BASE_DIR, "model", "encoder.pkl")
+)
 
 
 @app.route("/", methods=["GET", "POST"])
